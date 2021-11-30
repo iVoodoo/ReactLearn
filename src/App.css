@@ -1,29 +1,33 @@
+ body {
+   background-color: #e3e3ff;
+ }
 .app__wrapper {
   display: grid;
   width: 1200px;
   margin: 0 auto;
+  
+
   grid-template-areas:
   "h h"
   "n c";
-  grid-template-rows: 84px 1fr;
+  grid-template-rows: 100px 1fr;
   grid-template-columns: 2fr 10fr;
   /* grid-gap: 10px; */
 }
 .header {
   grid-area: h;
-  background-color: green;
+  background-color: #2b0245;
 }
 .header img {
-  padding: 10px;
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
 }
 .nav {
   grid-area: n;
-  background-color: bisque;
+  background-color: #e3e3ff;
 }
 
 .content {
   grid-area: c;
-  background-color: blue;
+  background-color: #d6fffb;
 }
