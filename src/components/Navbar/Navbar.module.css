@@ -4,9 +4,29 @@
 }
 
 .item {
-    color: black;
+    margin: 30px;
+    width: 70px;
 }
+
 .item.active {
+    /* background-color: #2b0245;
+    color: white; */
+}
+
+.item a {
+    /* color: #551a8b; */
+    color: #230744;
+    /* padding: 10px 30px; */
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    width: 100px;
+    text-align: left;
+}
+
+.item a:active, a:hover {
+    border-radius: 7px;
     background-color: #2b0245;
     color: white;
+    text-decoration: none;
 }
