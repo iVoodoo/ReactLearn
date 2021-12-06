@@ -9,8 +9,8 @@ const MyPosts = () => {
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                     <button>Add posts</button>
                 </div>
-                <Post message = 'Hey, how are u?'/>
-                <Post message = "It's my first post"/>
+                <Post message = 'Hey, how are u?' likeCounts='10'/>
+                <Post message = "It's my first post"likeCounts='20'/>
             </div>
        
     );
