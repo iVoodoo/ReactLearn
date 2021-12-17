@@ -1,7 +1,6 @@
 .dialogs__wrapper {
     display: grid;
     grid-template-columns: 2fr 10fr;
-    background-color: #b4e3f5;
     /* background-color: khaki; */
 }
 
@@ -12,6 +11,17 @@
 .dialogs__item .dialog {
     margin-top: 10px;
 }
+.dialog__person {
+    color: #230744;
+    text-decoration: none;
+   
+    padding: 5px;
+    text-align: center;
+}
+/* .dialog__person .active {
+    border: 0px solid #230744;
+    border-radius: 7px;
+} */
 
 .messages__item {
     padding: 10px;

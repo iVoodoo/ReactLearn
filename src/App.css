@@ -12,11 +12,14 @@
   "n c";
   grid-template-rows: 100px 1fr;
   grid-template-columns: 2fr 10fr;
-  /* grid-gap: 10px; */
+  grid-gap: 10px;
 }
 
 .app__wrapper__content {
   padding-top: 40px;
   grid-area: c;
+  background-color: #e3e3ff;
+  border: 1px solid #230744;
+  border-radius: 7px;
   /* background-color: brown; */
 }
