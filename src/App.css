@@ -18,5 +18,5 @@
 .app__wrapper__content {
   padding-top: 40px;
   grid-area: c;
-  background-color: brown;
+  /* background-color: brown; */
 }

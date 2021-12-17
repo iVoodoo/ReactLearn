@@ -1,3 +1,22 @@
 .dialogs__wrapper {
-    background-color: khaki;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    background-color: #b4e3f5;
+    /* background-color: khaki; */
+}
+
+.dialogs__item {
+    padding: 10px;
+}
+
+.dialogs__item .dialog {
+    margin-top: 10px;
+}
+
+.messages__item {
+    padding: 10px;
+}
+
+.messages__item .message {
+    margin-top: 10px;
 }
