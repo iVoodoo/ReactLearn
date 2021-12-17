@@ -1,3 +1,32 @@
 .dialogs__wrapper {
-    background-color: khaki;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    /* background-color: khaki; */
+}
+
+.dialogs__item {
+    padding: 10px;
+}
+
+.dialogs__item .dialog {
+    margin-top: 10px;
+}
+.dialog__person {
+    color: #230744;
+    text-decoration: none;
+   
+    padding: 5px;
+    text-align: center;
+}
+/* .dialog__person .active {
+    border: 0px solid #230744;
+    border-radius: 7px;
+} */
+
+.messages__item {
+    padding: 10px;
+}
+
+.messages__item .message {
+    margin-top: 10px;
 }
