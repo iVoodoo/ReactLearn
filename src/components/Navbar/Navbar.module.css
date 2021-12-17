@@ -3,20 +3,22 @@
     background-color: #e3e3ff;
 }
 
-.item {
-    margin: 30px;
+/* .item {
+    margin: 10px;
     width: 70px;
-}
+} */
 
-.item.active {
-    /* background-color: #2b0245;
-    color: white; */
-}
+/* .item.active {
+    background-color: #2b0245;
+    color: white;
+} */
 
-.item a {
+.item {
     /* color: #551a8b; */
     color: #230744;
     /* padding: 10px 30px; */
+    margin: 5px;
+    width: 70px;
     float: left;
     padding: 12px;
     text-decoration: none;
@@ -24,9 +26,21 @@
     text-align: left;
 }
 
-.item a:active, a:hover {
+.item:active, .item:hover {
     border-radius: 7px;
     background-color: #2b0245;
     color: white;
     text-decoration: none;
+}
+.active {
+    margin: 5px;
+    width: 70px;
+    border-radius: 7px;
+    background-color: #2b0245;
+    color: white;
+    text-decoration: none;
+    float: left;
+    padding: 12px;
+    width: 100px;
+    text-align: left;
 }
