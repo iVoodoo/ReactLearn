@@ -1,3 +1,6 @@
-.content {
+/* .content {
     grid-area: c;
+} */
+.post__container {
+    margin: 10px;
 }
