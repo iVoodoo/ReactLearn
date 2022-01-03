@@ -10,7 +10,7 @@ import News from './components/News/News';
 import Music from './components/Music/Music';
 
 const App = (props) => {
-  console.log(props.link);
+  // console.log(props.link);
   return (
     <BrowserRouter>
       <div className="app__wrapper">
@@ -18,8 +18,8 @@ const App = (props) => {
         <Navbar />
         <div className="app__wrapper__content">
           <Routes>
-            <Route path='/dialogs' element={<Dialogs dialogData={props.dialogData}/>}/>
-            <Route path='/profile' element={<Profile link={props.link}/>}/>
+            <Route path='/dialogs' element={<Dialogs dialogData={props.dialogData} messageData={props.messageData}/>}/>
+            <Route path='/profile' element={<Profile postData={props.postData}/>}/>
             <Route path='/settings' element={<Settings/>}/>
             <Route path='/news' element={<News/>}/>
             <Route path='/music' element={<Music/>} />

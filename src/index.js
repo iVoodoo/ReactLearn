@@ -13,12 +13,19 @@ let dialogData = [
   {id: 5, name: "user 5"}
 ];
 
-let link="https://img1.badfon.ru/original/1024x768/9/ee/leyk-luiz-kanada-les-nebo.jpg";
+let messageData = [
+  {id: 1, message: "Hi"}, 
+  {id: 2, message: "wassup maaan"}
+];
 
-ReactDOM.render(
-  
+let postData = [
+       {id: 1, message: "Hey, how are u?", likeCount: 12}, 
+       {id: 2, message: "It's my first post", likeCount: 10}
+];
+
+ReactDOM.render(  
   <React.StrictMode>
-    <App dialogData={dialogData} link={link}/>
+    <App dialogData={dialogData} messageData={messageData} postData={postData}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

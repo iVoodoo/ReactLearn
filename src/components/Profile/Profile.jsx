@@ -3,11 +3,10 @@ import s from './Profile.module.css';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = (props) => {
-    console.log(props.link);
     return (
         <div>
-            <ProfileInfo link={props.link}/>
-            <MyPosts />
+            <ProfileInfo/>
+            <MyPosts postData={props.postData}/>
         </div>
     );
 }
