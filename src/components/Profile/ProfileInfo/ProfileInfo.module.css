@@ -1,3 +1,7 @@
 .profile__description {
     margin: 10px;
 }
+img {
+    height: auto;
+    width: 40%;
+}
