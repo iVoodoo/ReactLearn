@@ -4,6 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import state from './redux/state';
+<<<<<<< HEAD
+=======
+
+ReactDOM.render(  
+  <React.StrictMode>
+    <App state={state}/>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+>>>>>>> parent of 798d505 (callback)
 
   ReactDOM.render(  
     <React.StrictMode>
