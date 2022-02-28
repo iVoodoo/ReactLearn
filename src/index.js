@@ -4,17 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import state from './redux/state';
-<<<<<<< HEAD
-=======
+import {addPost} from './redux/state';
 
-ReactDOM.render(  
-  <React.StrictMode>
-    <App state={state}/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
->>>>>>> parent of 798d505 (callback)
-
+// addPost('ehehe');
   ReactDOM.render(  
     <React.StrictMode>
       <App state={state} addPost={addPost}/>
