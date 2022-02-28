@@ -1,6 +1,8 @@
+import { renderEntrieTree } from "../render";
 
 
   let state = {
+
     dialogPage :{
         dialogData: [
             {id: 1, name: "user 1"}, 
@@ -20,19 +22,28 @@
         postData: [
             {id: 1, message: "Hey, how are u?", likeCount: 12}, 
             {id: 2, message: "It's my first post", likeCount: 10}
-     ]
+     ],
+        newPostText:"abobUS"
     }
   };
 
-  export let addPost = (postMessage) => {
-    debugger;
+  window.state = state;
+
+  export let addPost = () => {
     let newPost = {
       id: 5,
-      message: postMessage, 
+      message: state.profilePage.newPostText, 
       likeCount: 0
     };
 
     state.profilePage.postData.push(newPost);
+    state.profilePage.newPostText = "";
+    renderEntrieTree(state);
+  }
+
+  export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    renderEntrieTree(state);
   }
 
   export default state;
