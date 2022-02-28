@@ -6,7 +6,12 @@ const MyPosts = (props) => {
     let postElements = props.postData.map(
         post => <Post message={post.message} likesCount={post.likeCount}/>
 
-    );
+    let addPost = () => {
+        debugger;
+        let text = newPostElement.current.value; 
+        props.addPost(text);
+    }
+
     return (
             <div className={s.post__container}>
                 MY posts
