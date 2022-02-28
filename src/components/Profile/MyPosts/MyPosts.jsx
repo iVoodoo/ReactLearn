@@ -6,15 +6,7 @@ const MyPosts = (props) => {
     let postElements = props.postData.map(
         post => <Post message={post.message} likesCount={post.likeCount}/>
 
-<<<<<<< HEAD
-    let addPost = () => {
-        debugger;
-        let text = newPostElement.current.value; 
-        props.addPost(text);
-    }
-=======
     );
->>>>>>> parent of 3957c46 (learn ref, onclick)
 
     return (
             <div className={s.post__container}>
