@@ -7,7 +7,6 @@ const MyPosts = (props) => {
         post => <Post message={post.message} likesCount={post.likeCount}/>
 
     );
-
     return (
             <div className={s.post__container}>
                 MY posts
