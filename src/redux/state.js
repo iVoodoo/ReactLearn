@@ -1,4 +1,6 @@
-import { renderEntrieTree } from "../render";
+let rerenderEntrieTree = () => {
+  console.log('state is changed');
+}
 
 
   let state = {
@@ -29,7 +31,7 @@ import { renderEntrieTree } from "../render";
 
   window.state = state;
 
-  export let addPost = () => {
+  export const addPost = () => {
     let newPost = {
       id: 5,
       message: state.profilePage.newPostText, 
@@ -38,12 +40,17 @@ import { renderEntrieTree } from "../render";
 
     state.profilePage.postData.push(newPost);
     state.profilePage.newPostText = "";
-    renderEntrieTree(state);
+    rerenderEntrieTree(state);
   }
 
-  export let updateNewPostText = (newText) => {
+  export const updateNewPostText = (newText) => {
     state.profilePage.newPostText = newText;
-    renderEntrieTree(state);
+    rerenderEntrieTree(state);
   }
+
+  export const subscribe = (observer) => {
+    rerenderEntrieTree = observer;
+  }
+
 
   export default state;
