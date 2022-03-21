@@ -1,7 +1,5 @@
-import { renderEntrieTree } from "../render";
-
-
-  let state = {
+let store = {
+  _state: {
 
     dialogPage :{
         dialogData: [
@@ -25,25 +23,33 @@ import { renderEntrieTree } from "../render";
      ],
         newPostText:"abobUS"
     }
-  };
-
-  window.state = state;
-
-  export let addPost = () => {
+  },
+  getState() {
+    return this._state;
+  },
+  _callSubscriber(){
+    console.log('state is changed');
+  },
+  addPost(){
     let newPost = {
       id: 5,
-      message: state.profilePage.newPostText, 
+      message: this._state.profilePage.newPostText, 
       likeCount: 0
     };
 
-    state.profilePage.postData.push(newPost);
-    state.profilePage.newPostText = "";
-    renderEntrieTree(state);
+    this._state.profilePage.postData.push(newPost);
+    this._state.profilePage.newPostText = "";
+    this._callSubscriber(this._state);
+  },
+  updateNewPostText(newText){
+    this._state.profilePage.newPostText = newText;
+    this._callSubscriber(this._state);
+  },
+  subscribe(observer){
+    this._callSubscriber = observer;
   }
+}
 
-  export let updateNewPostText = (newText) => {
-    state.profilePage.newPostText = newText;
-    renderEntrieTree(state);
-  }
-
-  export default state;
+export default store;
+window.store = store;
+ 
