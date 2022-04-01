@@ -30,3 +30,27 @@
 .messages__item .message {
     margin-top: 10px;
 }
+
+.messageSendingBlock {
+    margin-top: 20px;
+    width: 70%;
+}
+
+.messageBody {
+    border: 1px solid #230744;
+    width: 50%;
+}
+
+.messageSendBtn {
+    padding: 10px 20px;
+    border: 1px solid #230744;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.messageSendBtn:hover {
+    border-radius: 7px;
+    transition: 0.66s;
+    background-color: #2b0245;
+    color: white;
+}
