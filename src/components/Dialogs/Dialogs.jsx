@@ -5,7 +5,7 @@ import s from './Dialogs.module.css';
 import Message from './Message/Message';
 
 const Dialogs = (props) => {
-    // debugger
+    debugger
     let state = props.dialogsPage;
 
     let dialogElements = state.dialogData.map(
